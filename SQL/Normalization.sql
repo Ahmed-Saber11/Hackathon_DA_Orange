@@ -1,11 +1,11 @@
--- Dim_Locations  --> done
+-- Dim_Locations   
 CREATE TABLE Dim_Locations (
     Location_ID INT IDENTITY(1,1) PRIMARY KEY,
     City NVARCHAR(100),
     Country NVARCHAR(100)
 );
  
--- Dim_Hotels   --> done
+-- Dim_Hotels   
 CREATE TABLE Dim_Hotels (
     Hotel_ID INT IDENTITY(1,1) PRIMARY KEY,
     Hotel_Name NVARCHAR(500),
@@ -14,7 +14,7 @@ CREATE TABLE Dim_Hotels (
     Location_ID INT FOREIGN KEY REFERENCES Dim_Locations(Location_ID)
 );
 
---  Dim_Properties  --> done
+--  Dim_Properties   
 CREATE TABLE Dim_Properties (
     Property_ID INT IDENTITY(1,1) PRIMARY KEY,
     Room_Type NVARCHAR(100),
@@ -51,7 +51,6 @@ CREATE TABLE Dim_Properties (
 INSERT INTO Dim_Locations (city, country)
 SELECT DISTINCT city, country 
 FROM Dim_Locations 
--- WHERE city IS NOT NULL;
 
 select * from Dim_Locations
 
@@ -88,7 +87,7 @@ select * from Dim_Hotels
 --
 INSERT INTO Fact_Reviews (Hotel_ID, Property_ID, RealSum, Review_Date, Cleanliness_Rating, Guest_Satisfaction,
 Dist_From_Center, Metro_Dist, Attr_Index, Rest_Index, Reviewer_Score, Reviewer_Nationality, Tags, Week_Type)
-SELECT Top(2000000)
+SELECT  
     H.Hotel_ID, 
     P.Property_ID,
     TRY_CAST(S.realSum AS FLOAT),
@@ -109,3 +108,4 @@ JOIN Dim_Properties P ON S.room_type = P.Room_Type
     AND TRY_CAST(S.person_capacity AS INT) = P.Person_Capacity
     AND TRY_CAST(S.bedrooms AS INT) = P.Bedrooms;
 	
+
