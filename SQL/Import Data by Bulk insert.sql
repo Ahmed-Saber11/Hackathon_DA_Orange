@@ -44,4 +44,5 @@ WITH (
     ERRORFILE = 'D:\Hackathon_DA\upload_errors.log' );
 
 
-select distinct week_type from RawData_Staging
+
+select * from RawData_Staging
