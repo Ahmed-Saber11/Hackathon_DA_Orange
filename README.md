@@ -1,15 +1,15 @@
-## 📊 Orange Data Analytics Hackathon
+## Orange Data Analytics Hackathon
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Power Bi](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Web Scraping](https://img.shields.io/badge/Web_Scraping-FF6F00?style=for-the-badge&logo=data-stack&logoColor=white)
 
-## 📖 Project Overview
+##  Project Overview
 An advanced data engineering and analytics project focused on transforming raw, fragmented data into a structured **Snowflake Schema**. The highlight of this project is the innovative use of **Web Scraping** to handle missing values, ensuring 100% data accuracy instead of traditional estimation.
 
 ---
 
-## 🏗️ Data Architecture Pipeline
+## Data Architecture Pipeline
 
 ### 1️⃣ Data Enrichment & Cleaning
 * **Merge:** Combined multiple datasets from different sources.
@@ -27,13 +27,3 @@ An advanced data engineering and analytics project focused on transforming raw, 
 * **SQL Insights:** Complex queries to extract business KPIs.
 * **Python EDA:** Comprehensive statistical analysis and correlation studies.
 * **Dashboarding:** Built an interactive dashboard to visualize trends and findings.
-
----
-
-## 📂 Repository Structure
-```bash
-├── 📁 Data/                # Raw, merged, and cleaned datasets
-├── 📁 Scraping_Scripts/    # Python scripts for data imputation
-├── 📁 SQL_Schema/          # SQL files, ERD diagrams, and queries
-├── 📁 Visualization/       # Dashboard files and screenshots
-└── 📄 README.md            # Project documentation
