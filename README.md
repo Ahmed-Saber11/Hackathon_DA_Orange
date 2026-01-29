@@ -1,6 +1,6 @@
 ## Orange Data Analytics Hackathon
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Power Bi](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Web Scraping](https://img.shields.io/badge/Web_Scraping-FF6F00?style=for-the-badge&logo=data-stack&logoColor=white)
 
